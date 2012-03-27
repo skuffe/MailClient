@@ -1,0 +1,13 @@
+c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\bin\Debug\MailClient.exe
+c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\bin\Debug\MailClient.pdb
+c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\obj\x86\Debug\MailClient.GUI_MailCreate.resources
+c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\obj\x86\Debug\MailClient.Properties.Resources.resources
+c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\obj\x86\Debug\MailClient.exe
+c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\obj\x86\Debug\MailClient.pdb
+c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\obj\x86\Debug\MailClient.GUI_Option.resources
+c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\bin\Debug\MailClient.exe.config
+c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\bin\Debug\OpenPop.dll
+C:\Users\dahoe.ITR\Documents\Visual Studio 2010\Projects\MailClient\MailClient\obj\x86\Debug\MailClient.GUI_Main.resources

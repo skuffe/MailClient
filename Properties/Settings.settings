@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MailClient.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="smtpHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">smtp.gmail.com</Value>
+    </Setting>
+    <Setting Name="smtpPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">587</Value>
+    </Setting>
+    <Setting Name="smtpUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mercantec@pwnz.dk</Value>
+    </Setting>
+    <Setting Name="smtpPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Fisk1234</Value>
+    </Setting>
+    <Setting Name="smtpUseAuth" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="popHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">pop.gmail.com</Value>
+    </Setting>
+    <Setting Name="popPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">995</Value>
+    </Setting>
+    <Setting Name="popUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mercantec@pwnz.dk</Value>
+    </Setting>
+    <Setting Name="popPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Fisk1234</Value>
+    </Setting>
+    <Setting Name="popUseSSL" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Setting" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
