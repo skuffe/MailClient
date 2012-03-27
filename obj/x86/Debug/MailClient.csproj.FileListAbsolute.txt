@@ -11,3 +11,6 @@ c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\o
 c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\bin\Debug\MailClient.exe.config
 c:\users\dahoe.itr\documents\visual studio 2010\Projects\MailClient\MailClient\bin\Debug\OpenPop.dll
 C:\Users\dahoe.ITR\Documents\Visual Studio 2010\Projects\MailClient\MailClient\obj\x86\Debug\MailClient.GUI_Main.resources
+C:\Users\kbni\Documents\Visual Studio 2010\Projects\MailClient\bin\Debug\MailClient.exe.config
+C:\Users\kbni\Documents\Visual Studio 2010\Projects\MailClient\obj\x86\Debug\MailClient.exe
+C:\Users\kbni\Documents\Visual Studio 2010\Projects\MailClient\obj\x86\Debug\MailClient.pdb
