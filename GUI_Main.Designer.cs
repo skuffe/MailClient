@@ -126,7 +126,6 @@
             this.messageTextBox.Size = new System.Drawing.Size(883, 523);
             this.messageTextBox.TabIndex = 4;
             this.messageTextBox.Text = "";
-            this.messageTextBox.WordWrap = false;
             // 
             // listMessages
             // 
