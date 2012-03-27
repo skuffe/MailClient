@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Net.Mail;
+using System.Security.Cryptography;
 
 namespace MailClient
 {
@@ -101,6 +102,38 @@ namespace MailClient
             errorMessage = "e-mail address must be valid e-mail address format.\n" +
                "For example 'someone@example.com' ";
             return false;
+        }
+
+        private bool buttonEncryptState = true;
+
+        private void buttonEncrypt_Click(object sender, EventArgs e)
+        {
+            SimpleAES crypto = new SimpleAES();
+
+            if (buttonEncryptState && rtBody.Text.Length != 0)
+            {
+                string encryptedBody;
+                encryptedBody = crypto.EncryptToString(rtBody.Text);
+                rtBody.Text = encryptedBody;
+                buttonEncrypt.Text = "Decrypt";
+                buttonEncryptState = false;
+            }
+            else
+            {
+                try
+                {
+                    string decryptedBody;
+                    decryptedBody = crypto.DecryptString(rtBody.Text);
+                    rtBody.Text = decryptedBody;
+                    buttonEncrypt.Text = "Encrypt";
+                    buttonEncryptState = true;
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Decrypt error: " + ex.Message);
+                }
+            }
         }
     }
 }

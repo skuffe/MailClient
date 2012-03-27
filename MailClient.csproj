@@ -85,6 +85,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="SimpleAES.cs" />
     <EmbeddedResource Include="GUI_MailCreate.resx">
       <DependentUpon>GUI_MailCreate.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +123,7 @@
     <None Include="Resources\NewMail.bmp" />
     <Content Include="Resources\burnCD.ico" />
     <Content Include="Resources\NewMessage.bmp" />
+    <Content Include="Resources\ProtectForm.bmp" />
     <Content Include="Resources\RefreshDocView.bmp" />
   </ItemGroup>
   <ItemGroup>

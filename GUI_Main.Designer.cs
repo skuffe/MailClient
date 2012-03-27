@@ -49,10 +49,11 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tbstNew = new System.Windows.Forms.ToolStripButton();
             this.tbstGet1 = new System.Windows.Forms.ToolStripButton();
+            this.tbstCrypto = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.progressBar1 = new System.Windows.Forms.ToolStripProgressBar();
-            this.messageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.totalMessages1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.messageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -121,9 +122,11 @@
             // 
             this.messageTextBox.Location = new System.Drawing.Point(265, 53);
             this.messageTextBox.Name = "messageTextBox";
+            this.messageTextBox.ReadOnly = true;
             this.messageTextBox.Size = new System.Drawing.Size(883, 523);
             this.messageTextBox.TabIndex = 4;
             this.messageTextBox.Text = "";
+            this.messageTextBox.WordWrap = false;
             // 
             // listMessages
             // 
@@ -180,7 +183,8 @@
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tbstNew,
-            this.tbstGet1});
+            this.tbstGet1,
+            this.tbstCrypto});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1160, 25);
@@ -204,6 +208,15 @@
             this.tbstGet1.Size = new System.Drawing.Size(71, 22);
             this.tbstGet1.Text = "Get Mail";
             this.tbstGet1.Click += new System.EventHandler(this.tbstGet1_Click_1);
+            // 
+            // tbstCrypto
+            // 
+            this.tbstCrypto.Image = ((System.Drawing.Image)(resources.GetObject("tbstCrypto.Image")));
+            this.tbstCrypto.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tbstCrypto.Name = "tbstCrypto";
+            this.tbstCrypto.Size = new System.Drawing.Size(68, 22);
+            this.tbstCrypto.Text = "Decrypt";
+            this.tbstCrypto.Click += new System.EventHandler(this.tbstCrypto_Click);
             // 
             // statusStrip1
             // 
@@ -277,6 +290,7 @@
         private System.Windows.Forms.ToolStripButton tbstGet1;
         private System.Windows.Forms.ToolStripProgressBar progressBar1;
         private System.Windows.Forms.ToolStripStatusLabel totalMessages1;
+        private System.Windows.Forms.ToolStripButton tbstCrypto;
     }
 }
 

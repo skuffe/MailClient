@@ -62,6 +62,7 @@ namespace MailClient
             tsbtNew.Enabled = false;
             tsbtGet.Enabled = false;
             progressBar1.Value = 0;
+            messages.Clear();
 
             try
             {
@@ -170,7 +171,7 @@ namespace MailClient
                 if (selectedMessagePart.IsText)
                 {
                     // We can show text MessageParts
-                    messageTextBox.Text = selectedMessagePart.GetBodyAsText();
+                    messageTextBox.Text = selectedMessagePart.GetBodyAsText().TrimEnd('\r', '\n');
                 }
                 else
                 {
@@ -188,15 +189,16 @@ namespace MailClient
                 if (plainTextPart != null)
                 {
                     // The message had a text/plain version - show that one
-                    messageTextBox.Text = plainTextPart.GetBodyAsText();
+                    messageTextBox.Text = plainTextPart.GetBodyAsText().TrimEnd('\r', '\n');
                 }
                 else
                 {
                     // Try to find a body to show in some of the other text versions
                     List<MessagePart> textVersions = message.FindAllTextVersions();
-                    if (textVersions.Count >= 1)
-                        messageTextBox.Text = textVersions[0].GetBodyAsText();
-                    else
+                    if (textVersions.Count >= 1) {
+                        messageTextBox.Text = textVersions[0].GetBodyAsText().TrimEnd('\r', '\n');
+                    }
+                    else 
                         messageTextBox.Text = "<<OpenPop>> Cannot find a text version body in this message to show <<OpenPop>>";
                 }
             }
@@ -215,6 +217,24 @@ namespace MailClient
 
             // Otherwise we are not at the root, move up the tree
             return GetMessageNumberFromSelectedNode(node.Parent);
+        }
+
+        private void tbstCrypto_Click(object sender, EventArgs e)
+        {
+            if (messageTextBox.Text.Length != 0)
+            {
+                try
+                {
+                    SimpleAES crypto = new SimpleAES();
+                    string decryptedBody;
+                    decryptedBody = crypto.DecryptString(messageTextBox.Text);
+                    messageTextBox.Text = decryptedBody;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Decrypt error: " + ex.Message);   
+                }
+            }
         }
     }
 
